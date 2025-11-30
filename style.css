@@ -1,0 +1,90 @@
+body {
+    background-color: #1b1b1b;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: center;       /* centraliza vertical */
+    height: 100vh;             /* ocupa a tela inteira */
+    margin: 0;                 /* tira espaçamentos padrão */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.titulo {
+    text-align: center;
+    margin-bottom: 40px;   /* 🔥 aqui aumenta a distância */
+    font-size: 26px;
+    color: #fff;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row; /* mantém os itens internos na horizontal */
+    gap: 10px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+
+
+/* caixa principal */
+.converter-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+/* linha horizontal com os 3 elementos */
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* inputs e select */
+.linha input,
+.linha select {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+/* botão converter */
+#converter {
+    padding: 15px;
+    background-color: #0b7cc7;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#converter:hover {
+    background-color: #0666a7;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centraliza tudo verticalmente */
+    align-items: center;       /* centraliza horizontalmente */
+    height: 100vh;             /* pega a tela inteira */
+}
+
+
